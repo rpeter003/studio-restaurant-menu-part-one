@@ -32,3 +32,13 @@ public class Menu {
 
     // no setters --- as of now I don't think there is any reason to overwrite the properties
 }
+    public boolean addMenuItem(MenuItem item){
+    this.menuItems.add(item);
+    return true;
+    }
+
+    public boolean addMenuItem(double price, String description, String category) {
+    MenuItem item = new MenuItem(price, description, category);
+    this.menuItems.add(item);
+    return true;
+    };
